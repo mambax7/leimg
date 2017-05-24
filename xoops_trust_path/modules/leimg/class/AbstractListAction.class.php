@@ -105,7 +105,7 @@ abstract class Leimg_AbstractListAction extends Leimg_AbstractAction
 		$this->mFilter->fetch();
 	
 		$handler =& $this->_getHandler();
-		$this->mObjects =& $handler->getObjects($this->mFilter->getCriteria());
+		$this->mObjects = $handler->getObjects($this->mFilter->getCriteria());
 	
 		return LEIMG_FRAME_VIEW_INDEX;
 	}
